@@ -20,6 +20,16 @@
   }
 },
 {
+  "model": "ice_cream.category",
+  "pk": 3,
+  "fields": {
+    "is_published": true,
+    "title": "Советское",
+    "slug": "soviet",
+    "output_order": 100
+  }
+},
+{
   "model": "ice_cream.topping",
   "pk": 1,
   "fields": {
@@ -119,11 +129,11 @@
   "pk": 1,
   "fields": {
     "is_published": true,
-    "is_on_main": true,
     "title": "Золотое мороженое",
     "description": "Шарики таитянского ванильного мороженого, шоколад “Amedei Porcelana” и груда экзотических фруктов. Всё это покрыто золотой фольгой, её тоже полагается съесть.",
     "wrapper": 3,
     "category": 1,
+    "is_on_main": true,
     "toppings": [
       1
     ]
@@ -134,11 +144,11 @@
   "pk": 2,
   "fields": {
     "is_published": true,
-    "is_on_main": false,
     "title": "Готическое мороженое",
     "description": "Чёрное мороженое в чёрном вафельном рожке для true black goths. Состав: сливочное мороженое, миндаль, активированный уголь, чернота, мрак, отрицание.",
     "wrapper": null,
     "category": 1,
+    "is_on_main": false,
     "toppings": [
       3,
       5
@@ -150,11 +160,11 @@
   "pk": 3,
   "fields": {
     "is_published": true,
-    "is_on_main": false,
     "title": "Мороженое паста карбонара",
     "description": "Порция макарон под тёмным соусом. Паста — из ванильного мороженого, продавленного через пресс с дырочками, соус — ликёр с орехами. Buon appetito!",
     "wrapper": null,
     "category": 1,
+    "is_on_main": false,
     "toppings": [
       3,
       6,
@@ -167,11 +177,11 @@
   "pk": 4,
   "fields": {
     "is_published": true,
-    "is_on_main": true,
     "title": "Люминесцентное мороженое",
     "description": "Сливочное мороженое с белками, активированными кальцием. Светится, если облизнуть. Можно подавать в тыкве на Хэллоуин или кормить собаку Баскервилей.",
     "wrapper": 2,
     "category": 1,
+    "is_on_main": true,
     "toppings": [
       2
     ]
@@ -182,11 +192,11 @@
   "pk": 5,
   "fields": {
     "is_published": true,
-    "is_on_main": false,
     "title": "Жареное мороженое",
     "description": "Шарики мороженого обваливают яйце и в панировке, сильно замораживают и быстро обжаривают в растительном масле. Едят быстро.",
     "wrapper": null,
     "category": 1,
+    "is_on_main": false,
     "toppings": [
       2,
       3,
@@ -201,11 +211,11 @@
   "pk": 6,
   "fields": {
     "is_published": true,
-    "is_on_main": false,
     "title": "Луковое мороженое",
     "description": "Обжаренный на оливковом масле лук, сахар, молоко, сливки, яйцо и ванилин — нет, это не добавка к бифштексу, а отличное лакомство.",
     "wrapper": null,
     "category": 1,
+    "is_on_main": false,
     "toppings": [
       6
     ]
@@ -216,11 +226,11 @@
   "pk": 7,
   "fields": {
     "is_published": true,
-    "is_on_main": false,
     "title": "Морской коктейль",
     "description": "Мороженое как мороженое, но в составе — водоросли и икра морской рыбы. Многим нравится.",
     "wrapper": null,
     "category": 1,
+    "is_on_main": false,
     "toppings": [
       2
     ]
@@ -231,11 +241,11 @@
   "pk": 8,
   "fields": {
     "is_published": true,
-    "is_on_main": true,
     "title": "Томатное мороженое",
     "description": "В СССР делали и томатное мороженое тоже. Вкус специфический.",
     "wrapper": 1,
     "category": 2,
+    "is_on_main": true,
     "toppings": [
       1
     ]
@@ -246,11 +256,11 @@
   "pk": 9,
   "fields": {
     "is_published": true,
-    "is_on_main": false,
     "title": "Фруктово-ягодное мороженое",
     "description": "Сырьё: сливки, пахта, фрукты и ягоды в свежем виде, яичный порошок из куриных яиц, патока карамельная. Общее количество микробов в 1 мл мороженого: не более 250 тыс.",
     "wrapper": null,
     "category": 2,
+    "is_on_main": false,
     "toppings": [
       3
     ]
@@ -261,11 +271,11 @@
   "pk": 10,
   "fields": {
     "is_published": true,
-    "is_on_main": true,
     "title": "Эскимо",
     "description": "Неустаревающая классика: мороженое на палочке, с шоколадной глазурью. Это мороженое-квест: съесть и не уронить!",
     "wrapper": null,
     "category": 2,
+    "is_on_main": true,
     "toppings": [
       4,
       6
@@ -277,11 +287,11 @@
   "pk": 11,
   "fields": {
     "is_published": true,
-    "is_on_main": false,
     "title": "Классический пломбир",
     "description": "Настоящее мороженое, для истинных ценителей вкуса. Если на столе появляется пломбир — это не надолго.",
     "wrapper": 4,
     "category": 2,
+    "is_on_main": false,
     "toppings": [
       3,
       5,
@@ -534,6 +544,32 @@
     "object_repr": "Классический пломбир",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u0431\\u0451\\u0440\\u0442\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2023-05-05T11:06:40.066Z",
+    "user": 3,
+    "content_type": 1,
+    "object_id": "3",
+    "object_repr": "Category object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2023-05-05T11:06:58.320Z",
+    "user": 3,
+    "content_type": 1,
+    "object_id": "3",
+    "object_repr": "Category object (3)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
   }
 },
 {
@@ -897,6 +933,114 @@
   }
 },
 {
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add топпинг",
+    "content_type": 2,
+    "codename": "add_topping"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change топпинг",
+    "content_type": 2,
+    "codename": "change_topping"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete топпинг",
+    "content_type": 2,
+    "codename": "delete_topping"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view топпинг",
+    "content_type": 2,
+    "codename": "view_topping"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add обёртка",
+    "content_type": 3,
+    "codename": "add_wrapper"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change обёртка",
+    "content_type": 3,
+    "codename": "change_wrapper"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete обёртка",
+    "content_type": 3,
+    "codename": "delete_wrapper"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view обёртка",
+    "content_type": 3,
+    "codename": "view_wrapper"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add мороженое",
+    "content_type": 4,
+    "codename": "add_icecream"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change мороженое",
+    "content_type": 4,
+    "codename": "change_icecream"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete мороженое",
+    "content_type": 4,
+    "codename": "delete_icecream"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view мороженое",
+    "content_type": 4,
+    "codename": "view_icecream"
+  }
+},
+{
   "model": "auth.user",
   "pk": 2,
   "fields": {
@@ -912,6 +1056,104 @@
     "date_joined": "2022-08-16T00:07:14.046Z",
     "groups": [],
     "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$qSgR1e6OhYJc0JxRDrj2OO$obPuaic+HWMGOnEKMW92yl5HevUzZR2PUWdP9oXk+fc=",
+    "last_login": "2023-05-05T10:58:47.306Z",
+    "is_superuser": true,
+    "username": "roman2023",
+    "first_name": "",
+    "last_name": "",
+    "email": "rommaz@yandex.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-05-05T09:52:02.109Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "ice_cream",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "ice_cream",
+    "model": "topping"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "ice_cream",
+    "model": "wrapper"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "ice_cream",
+    "model": "icecream"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
   }
 },
 {
@@ -936,6 +1178,14 @@
   "fields": {
     "session_data": ".eJxVjEEOwiAQRe_C2hA7MDi4dO8ZCDCDVA1NSrsy3l2bdKHb_977LxXiutSwdpnDyOqsQB1-txTzQ9oG-B7bbdJ5ass8Jr0peqddXyeW52V3_w5q7PVbC7Ej70_GHF0mQrYeBUWMBTIFfQGGPHgrCQeHCJjQx1KMLWCYLKn3B8RHNxY:1oT41Z:GjiOaEL2u2u36ewPOK3JwyT-hS_JdxVyhGIGElW9L54",
     "expire_date": "2022-09-13T16:23:37.163Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "f05eqyr89b9tbh7xigia20b6ficy5h0j",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAQBP_iGlm-GOeAkp43RD7vhQSQLcVJhfg7iZQC2p3ZeZsuLvPQLVWnboS5GG8Ov5vE9NS8ATxivhebSp6nUeym2J1WeyvQ13V3_wJDrMP6VicSQNpw452D79ugygyGI6ZEjAQEDmfBESTetSes9VYT9bFvyHy-84I4rA:1put9D:IdRsTr7YxVS0eyAQzTxe4WznLMZ66wObk4D2EXM07FU",
+    "expire_date": "2023-05-19T10:58:47.406Z"
   }
 },
 {
