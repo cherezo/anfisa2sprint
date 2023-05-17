@@ -573,42 +573,6 @@
   }
 },
 {
-  "model": "auth.user",
-  "pk": 2,
-  "fields": {
-    "password": "pbkdf2_sha256$260000$7wwqOI9F1CE7jzGTvcskO0$d78XoBkBk4AQqdzg1n9WriFAtEQf1EA0B3dwh0EZ0VQ=",
-    "last_login": "2022-08-30T16:23:37.131Z",
-    "is_superuser": true,
-    "username": "admin",
-    "first_name": "",
-    "last_name": "",
-    "email": "",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2022-08-16T00:07:14.046Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 3,
-  "fields": {
-    "password": "pbkdf2_sha256$260000$qSgR1e6OhYJc0JxRDrj2OO$obPuaic+HWMGOnEKMW92yl5HevUzZR2PUWdP9oXk+fc=",
-    "last_login": "2023-05-05T10:58:47.306Z",
-    "is_superuser": true,
-    "username": "roman2023",
-    "first_name": "",
-    "last_name": "",
-    "email": "rommaz@yandex.ru",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2023-05-05T09:52:02.109Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
   "model": "sessions.session",
   "pk": "5pka5iec1j6xxqxneevegxco1uim7raf",
   "fields": {
